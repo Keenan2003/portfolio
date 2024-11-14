@@ -1,0 +1,35 @@
+.dropdown-btn {
+    background: #3fe79e;
+    color: #000;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    margin: 5px;
+}
+
+.dropdown-btn:hover {
+    background: #2ba783;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #ffffff;
+    padding: 0 1.5rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.dropdown-content ul, .dropdown-content p {
+    margin: 1rem 0;
+}
+
+.dropdown.active .dropdown-content {
+    max-height: 500px; /* Adjust based on content length */
+    padding: 1.5rem;
+}
